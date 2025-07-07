@@ -7,8 +7,8 @@ from streamlit import cache_data
 
 def get_csv_path():
     """
-    Read the CSV path from the csvpath.txt file.
-    Returns the path as a string.
+    Read the CSV path from the csvpath.txt file. Returns the path as a
+    string.
     """
     script_dir = os.path.dirname(os.path.abspath(__file__))
     csv_path_file = os.path.join(script_dir, "csvpath.txt")
@@ -17,7 +17,7 @@ def get_csv_path():
         with open(csv_path_file, "r") as file:
             return file.read().strip()
     except FileNotFoundError:
-        # Default path if file not found
+        # Default path if a file is not found
         return "students.csv"
 
 
