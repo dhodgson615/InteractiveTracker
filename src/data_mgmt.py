@@ -1,9 +1,28 @@
+import os
 from datetime import datetime
 
 from pandas import DataFrame, concat, read_csv
 from streamlit import cache_data
 
-from csv_path import CSV_PATH
+
+def get_csv_path():
+    """
+    Read the CSV path from the csvpath.txt file.
+    Returns the path as a string.
+    """
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    csv_path_file = os.path.join(script_dir, "csvpath.txt")
+
+    try:
+        with open(csv_path_file, "r") as file:
+            return file.read().strip()
+    except FileNotFoundError:
+        # Default path if file not found
+        return "students.csv"
+
+
+# Set the CSV path from the text file
+CSV_PATH = get_csv_path()
 
 
 @cache_data(ttl=5)  # Cache data for 5 seconds
