@@ -13,7 +13,6 @@ def show_success_page():
     title("Successful Sign-In")
 
     if session_state.success_data is None:
-        # If no data, go back to welcome
         go_to_welcome()
         rerun()
 
@@ -22,7 +21,6 @@ def show_success_page():
 
     success(f"Thank you, {student_name}! You've been signed in for lesson #{lesson_number}.")
 
-    # Show student information
     markdown(f"**Lesson frequency:** {session_state.success_data['frequency_per_week']} per week")
     markdown(f"**Billing cycle:** {session_state.success_data['billing_cycle']}")
 
