@@ -6,7 +6,6 @@ from streamlit import markdown, rerun, session_state, success, title
 from navigation import go_to_welcome
 
 
-# Success page
 def show_success_page():
     """
     Display the success page after signing in a student.
@@ -17,7 +16,6 @@ def show_success_page():
         # If no data, go back to welcome
         go_to_welcome()
         rerun()
-        return
 
     student_name = session_state.success_data["name"]
     lesson_number = session_state.success_data["lesson_number_taken_so_far"]
@@ -32,10 +30,9 @@ def show_success_page():
     elapsed = (datetime.now() - session_state.countdown_start).total_seconds()
     remaining = 5 - elapsed
 
-    # Show countdown
     markdown(f"Returning to welcome screen in **{int(remaining + 1)}** seconds...")
 
-    # If time is up, redirect to welcome
+    # When time is up, redirect to welcome
     if remaining <= 0:
         session_state.success_data = None
         go_to_welcome()

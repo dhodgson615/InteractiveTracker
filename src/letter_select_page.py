@@ -4,7 +4,6 @@ from data_mgmt import load_student_data
 from navigation import go_to_student_select, go_to_welcome
 
 
-# Page: Letter Select
 def show_letter_select_page():
     """
     Display the letter selection page for returning students.

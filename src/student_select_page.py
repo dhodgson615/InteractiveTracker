@@ -5,7 +5,6 @@ from data_mgmt import load_student_data, update_student_record
 from navigation import go_to_letter_select, go_to_success
 
 
-# Page: Student Select
 def show_student_select_page():
     """
     Display the student selection page based on the selected letter.

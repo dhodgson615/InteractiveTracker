@@ -1,5 +1,6 @@
-from streamlit import caption, markdown, session_state
+from streamlit import session_state
 
+from footer import show_footer
 from letter_select_page import show_letter_select_page
 from new_student_page import show_new_student_page
 from page_config import set_page_configuration
@@ -31,6 +32,4 @@ elif session_state.page == "student_select":
 elif session_state.page == "success":
     show_success_page()
 
-markdown("---")
-caption("Student Lesson Tracker v1.0")
-caption("Created by Dylan Hodgson")
+show_footer()
