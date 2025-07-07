@@ -4,6 +4,12 @@ from data_mgmt import load_student_data
 from navigation import go_to_student_select, go_to_welcome
 
 
+def select_letter(letter):
+    """Callback function for when a letter is selected"""
+    session_state.selected_letter = letter
+    go_to_student_select()
+
+
 def show_letter_select_page():
     """
     Display the letter selection page for returning students.
@@ -19,8 +25,12 @@ def show_letter_select_page():
     cols = columns(5)
     for i, letter in enumerate(first_letters):
         with cols[i % 5]:
-            if button(letter, key=f"letter_{letter}", use_container_width=True):
-                session_state.selected_letter = letter
-                go_to_student_select()
+            button(
+                letter,
+                key=f"letter_{letter}",
+                on_click=select_letter,
+                args=(letter,),
+                use_container_width=True
+            )
 
     button("Back", on_click=go_to_welcome)
