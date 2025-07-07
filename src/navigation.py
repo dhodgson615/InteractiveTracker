@@ -1,6 +1,6 @@
 from datetime import datetime
 
-from streamlit import rerun, session_state
+from streamlit import session_state
 
 
 def go_to_welcome():
