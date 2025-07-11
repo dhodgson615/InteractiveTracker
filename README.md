@@ -1,5 +1,11 @@
 # InteractiveTracker
 
+Install the repo:
+
+```bash
+git clone https://github.com/dhodgson615/InteractiveTracker.git
+```
+
 Install the following dependencies:
 
 ```bash
