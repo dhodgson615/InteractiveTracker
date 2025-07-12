@@ -21,7 +21,7 @@ streamlit run src/streamlit_app.py
 ```
 
 You also need to have a `csvpath.txt` file in the root directory. This file should contain the path
-to a csv file containing student data (e.g. `"students.csv`) in the following format:
+to a csv file containing student data (e.g. `students.csv`) in the following format:
 
 ```csv
 name,frequency_per_week,last_lesson_date,lesson_number_taken_so_far,status,is_online,billing_cycle,note
