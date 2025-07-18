@@ -95,7 +95,11 @@ def update_student_record(student_name, note=""):
     # Save updated data back to CSV
     df.to_csv(CSV_PATH, index=False)
 
-    return df.loc[student_index]
+    # Return both student record and billing message
+    student_record = df.loc[student_index].copy()
+    student_record["billing_message"] = billing_message
+
+    return student_record
 
 
 def add_new_student(student_name):
