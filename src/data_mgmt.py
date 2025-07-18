@@ -45,6 +45,7 @@ def load_student_data():
                 "is_online",
                 "billing_cycle",
                 "note",
+                "content",
             ]
         )
         # Save the empty dataframe to create the file
