@@ -113,6 +113,7 @@ def add_new_student(student_name):
         "is_online": False,
         "billing_cycle": "Per Lesson",
         "note": "",
+        "content": "",
     }
 
     # Add to dataframe
