@@ -96,6 +96,7 @@ def add_new_student(student_name):
                 "is_online",
                 "billing_cycle",
                 "note",
+                "content",
             ]
         )
 
