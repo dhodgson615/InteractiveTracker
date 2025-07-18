@@ -111,7 +111,7 @@ def add_new_student(student_name):
         "lesson_number_taken_so_far": 1,
         "status": "New",
         "is_online": False,
-        "billing_cycle": "Per Lesson",
+        "billing_cycle": "Per Lesson",  # TODO: change to monthly by default
         "note": "",
         "content": "",
     }
