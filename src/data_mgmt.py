@@ -106,7 +106,6 @@ def add_new_student(student_name):
     """
     Add a new student to the CSV file.
     """
-    # Read current data
     try:
         df = read_csv(CSV_PATH)
     except FileNotFoundError:
