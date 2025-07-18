@@ -55,6 +55,7 @@ def load_student_data():
 def update_student_record(student_name, note=""):
     """
     Update the student's record with the latest lesson information.
+    Check if the billing threshold has been reached.
     """
     # Read current data
     df = read_csv(CSV_PATH)
