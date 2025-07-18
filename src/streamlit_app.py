@@ -33,3 +33,11 @@ elif session_state.page == "success":
     show_success_page()
 
 show_footer()
+
+"""TODO: Add shortcuts command to get the Streamlit link and save it to
+clipboard, flip the Focus mode across iCloud devices, make iPad have an
+automation to open the URL based on the Focus mode."""
+
+# Configure it so that the default student pays monthly
+# and the default lesson frequency is 1 per week.
+# Make it send the student a message when the bill is due.
