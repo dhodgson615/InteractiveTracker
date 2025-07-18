@@ -66,6 +66,25 @@ def update_student_record(student_name, note=""):
 
     # Increment lesson count
     df.at[student_index, "lesson_number_taken_so_far"] += 1
+    current_lesson = df.at[student_index, "lesson_number_taken_so_far"]
+
+    # TODO: Test this more thoroughly
+    ##########################################################################
+
+    billing_cycle = df.at[student_index, "billing_cycle"]
+    frequency = df.at[student_index, "frequency_per_week"]
+
+    # Check billing cycle thresholds
+    billing_message = None
+    if billing_cycle == "Per Lesson":
+        billing_message = "Payment due for this lesson" # TODO: don't send message for single lesson
+    elif billing_cycle == "Monthly" and current_lesson > 4:
+        billing_message = f"Monthly billing cycle completed (4 lessons)"
+    elif billing_cycle == "Quarterly" and current_lesson > 12:
+        billing_message = f"Quarterly billing cycle completed (12 lessons)"
+
+    print(f"Billing message: {billing_message}")  # TODO: Send this as a message with shortcuts CLI
+    ##########################################################################
 
     # Update last lesson date
     df.at[student_index, "last_lesson_date"] = datetime.now().strftime("%Y-%m-%d")
