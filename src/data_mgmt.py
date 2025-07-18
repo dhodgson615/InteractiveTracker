@@ -52,7 +52,6 @@ def load_student_data():
         df.to_csv(CSV_PATH, index=False)
         return df
 
-
 def update_student_record(student_name, note=""):
     """
     Update the student's record with the latest lesson information.
