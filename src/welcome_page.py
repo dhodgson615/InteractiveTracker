@@ -1,28 +1,28 @@
-from streamlit import button, columns, markdown, title
+import streamlit
 
-from navigation import go_to_letter_select, go_to_new_student
+from src import navigation
 
 
-def show_welcome_page():
-    """
-    Display the welcome page with options for new and returning
+def show_welcome_page() -> None:
+    """Display the welcome page with options for new and returning
     students.
     """
-    title("Lesson Sign-In")
-    markdown("### Welcome!")
+    streamlit.title("Lesson Sign-In")
+    streamlit.markdown("### Welcome!")
+    col1, col2 = streamlit.columns(2)
 
-    col1, col2 = columns(2)
     with col1:
-        button(
+        streamlit.button(
             "New Student",
-            on_click=go_to_new_student,
+            on_click=navigation.go_to_new_student,
             type="primary",
             use_container_width=True,
         )
+
     with col2:
-        button(
+        streamlit.button(
             "Returning Student",
-            on_click=go_to_letter_select,
+            on_click=navigation.go_to_letter_select,
             type="primary",
             use_container_width=True,
         )

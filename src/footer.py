@@ -1,10 +1,8 @@
-from streamlit import caption, markdown
+import streamlit
 
 
-def show_footer():
-    """
-    Display the footer with version information.
-    """
-    markdown("---")
-    caption("Student Lesson Tracker v1.0")
-    caption("Created by Dylan Hodgson")
+def show_footer() -> None:
+    """Display the footer with version information."""
+    streamlit.markdown("---")
+    streamlit.caption("Student Lesson Tracker v1.0")
+    streamlit.caption("Created by Dylan Hodgson")
