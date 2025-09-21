@@ -2,8 +2,8 @@
 
 import streamlit
 
-from ..page_manager import PageManager
-from ..repository import StudentRepository
+from page_manager import PageManager
+from repository import StudentRepository
 
 
 def show_new_student_page(page_manager: PageManager, repository: StudentRepository) -> None:

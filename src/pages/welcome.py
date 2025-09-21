@@ -2,7 +2,7 @@
 
 import streamlit
 
-from ..page_manager import PageManager
+from page_manager import PageManager
 
 
 def show_welcome_page(page_manager: PageManager) -> None:

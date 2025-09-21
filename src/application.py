@@ -4,10 +4,10 @@ from __future__ import annotations
 
 import streamlit
 
-from .models import Student
-from .page_manager import PageManager
-from .repository import StudentRepository
-from . import pages
+from models import Student
+from page_manager import PageManager
+from repository import StudentRepository
+import pages
 
 
 class Application:

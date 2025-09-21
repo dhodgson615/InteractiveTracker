@@ -8,7 +8,7 @@ from typing import Optional
 import pandas
 import streamlit
 
-from .models import Student
+from models import Student
 
 
 class StudentRepository:

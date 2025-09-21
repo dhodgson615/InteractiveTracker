@@ -5,7 +5,7 @@ import time
 
 import streamlit
 
-from ..page_manager import PageManager
+from page_manager import PageManager
 
 
 def show_success_page(page_manager: PageManager) -> None:

@@ -2,8 +2,8 @@
 
 import streamlit
 
-from ..page_manager import PageManager
-from ..repository import StudentRepository
+from page_manager import PageManager
+from repository import StudentRepository
 
 
 def select_letter(page_manager: PageManager, letter: str) -> None:

@@ -4,7 +4,13 @@ This application uses object-oriented patterns for better separation of
 responsibility and clarity.
 """
 
-from src.application import Application
+import sys
+import os
+
+# Add the parent directory to sys.path to allow importing from src
+sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+
+from application import Application
 
 
 def main() -> None:
@@ -15,11 +21,6 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-"""TODO: Add shortcuts command to get the Streamlit link and save it to
-clipboard, flip the Focus mode across iCloud devices, make iPad have an
-automation to open the URL based on the Focus mode."""
-
-# Configure it so that the default student pays monthly
-# and the default lesson frequency is 1 per week.
-# Make it send the student a message when the bill is due.
+else:
+    # When run by streamlit, directly execute main
+    main()
