@@ -2,7 +2,7 @@ import Foundation
 
 /// Represents a student with all their lesson and billing information
 struct Student: Codable, Identifiable {
-    let id = UUID()
+    var id = UUID()
     var name: String
     var frequencyPerWeek: Int = 1
     var lastLessonDate: String = ""

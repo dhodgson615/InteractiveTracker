@@ -1,44 +1,44 @@
 # InteractiveTracker
 
-A native macOS application for tracking student lessons and managing lesson sign-ins.
+A **native Swift macOS application** for tracking student lessons and managing lesson sign-ins.
 
 ## Features
 
-- **Native macOS App**: Beautiful, native GUI using tkinter with macOS-optimized styling
+- **Native macOS App**: Beautiful, truly native GUI using AppKit/Cocoa
 - **Student Management**: Add new students and track returning students
 - **Lesson Tracking**: Automatic lesson counting and date tracking
 - **Billing Integration**: Multiple billing cycles (Monthly, Quarterly, Per Lesson)
 - **Letter-based Navigation**: Quick student lookup by first letter
-- **CSV Data Storage**: Simple, portable data storage format
+- **CSV Data Storage**: Simple, portable data storage format in Documents folder
+- **Zero Dependencies**: Self-contained macOS application bundle
 
-## Installation
+## Installation & Usage
 
-### Option 1: Quick Install (Recommended)
+### Xcode Project (Recommended for Development)
 
-1. Run the installation script:
-   ```bash
-   ./install_macos.sh
-   ```
+1. Open `InteractiveTrackerXcode/InteractiveTracker.xcodeproj` in Xcode
+2. Build and run (⌘+R) 
+3. The app will create a `students.csv` file in your Documents folder automatically
 
-2. Double-click on `Interactive Tracker.app` to launch
+### Swift Package (Console Testing)
 
-### Option 2: Manual Install
+```bash
+cd InteractiveTrackerSwift
+swift run
+```
 
-1. Install Python dependencies:
-   ```bash
-   pip3 install -r requirements.txt
-   ```
+### Pre-built App (Coming Soon)
 
-2. Run the application:
-   ```bash
-   python3 run_gui.py
-   ```
+A pre-built `.app` bundle will be available for download in future releases.
 
 ## Usage
 
-### First Time Setup
+1. **New Students**: Click "New Student" to register a new student
+2. **Returning Students**: Click "Returning Student", then select the first letter of the student's name
+3. **Sign In**: Select the student and optionally add a note, then click "Sign In"
+4. **Success**: View lesson information and billing details
 
-1. Ensure you have a `students.csv` file in the same directory, or create one with the following format:
+The application automatically manages CSV data storage in your Documents folder with the format:
 
 ```csv
 name,frequency_per_week,last_lesson_date,lesson_number_taken_so_far,status,is_online,billing_cycle,note,content
@@ -46,49 +46,45 @@ John Doe,2,2023-10-01,5,active,yes,monthly,Out of town next week,
 Jane Smith,1,2023-10-02,3,inactive,no,yearly,Needs to reschedule,
 ```
 
-2. You can also specify a custom CSV path by editing `src/csvpath.txt` with the path to your CSV file.
+## Architecture
 
-### Using the App
+The Swift application uses modern macOS development patterns:
 
-1. **New Students**: Click "New Student" to register a new student
-2. **Returning Students**: Click "Returning Student", then select the first letter of the student's name
-3. **Sign In**: Select the student and optionally add a note, then click "Sign In"
-4. **Success**: View lesson information and billing details
-
-## Development
-
-### Web Version (Legacy)
-
-The original Streamlit web version is still available:
-
-```bash
-streamlit run src/streamlit_app.py
-```
-
-### Architecture
-
-The application uses object-oriented design patterns:
-
-- **Application Controller**: Manages the overall app flow
-- **Page Manager**: Handles navigation and state management  
-- **Student Repository**: Manages data persistence to CSV
-- **Student Model**: Encapsulates student data and behavior
+- **AppDelegate**: Manages application lifecycle and window creation
+- **MainViewController**: Handles UI navigation and page display
+- **Student**: Data model representing student information
+- **StudentRepository**: Manages CSV file persistence in Documents folder
+- **Pages**: Individual UI pages for different app functions
 
 ## Requirements
 
 - **macOS**: 10.13 or later
-- **Python**: 3.8 or later
-- **Dependencies**: pandas (automatically installed)
+- **Xcode**: For development and building
+- **No Runtime Dependencies**: Self-contained Swift application
 
-## File Structure
+## Project Structure
 
 ```
-Interactive Tracker.app/         # macOS application bundle
-└── Contents/
-    ├── Info.plist               # App metadata
-    ├── MacOS/
-    │   └── Interactive Tracker  # Launch script
-    └── Resources/
-        ├── src/                 # Application source code
-        └── students.csv         # Student data
+InteractiveTrackerXcode/              # Native macOS Xcode project
+├── InteractiveTracker.xcodeproj/     # Xcode project file
+└── InteractiveTracker/               # Swift source code
+    ├── AppDelegate.swift             # App lifecycle management
+    ├── MainViewController.swift      # Main UI controller
+    ├── MainViewController+Pages.swift # Page implementations
+    ├── Student.swift                 # Data model
+    ├── StudentRepository.swift       # CSV persistence
+    └── Assets.xcassets              # App icons and colors
+
+InteractiveTrackerSwift/              # Swift Package for testing
+├── Package.swift                     # Package configuration
+└── Sources/InteractiveTracker/       # Shared Swift code
+
+legacy/                               # Legacy Python implementation
+└── (Original Python/tkinter code - not maintained)
 ```
+
+## Legacy Python Version
+
+The original Python/tkinter implementation has been moved to the `legacy/` directory and is **no longer maintained**. The Swift version provides superior performance, native macOS integration, and requires no external dependencies.
+
+For details about the conversion from Python to Swift, see [SWIFT_CONVERSION_SUMMARY.md](SWIFT_CONVERSION_SUMMARY.md).
