@@ -16,6 +16,12 @@ A **native Swift macOS application** for tracking student lessons and managing l
 
 ### Xcode Project (Recommended for Development)
 
+#### Quick Setup
+```bash
+./setup_xcode.sh
+```
+
+#### Manual Setup
 1. Open `InteractiveTrackerXcode/InteractiveTracker.xcodeproj` in Xcode
 2. Build and run (⌘+R) 
 3. The app will create a `students.csv` file in your Documents folder automatically

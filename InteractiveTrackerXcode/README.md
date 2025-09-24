@@ -21,6 +21,19 @@ A native macOS application for tracking student lessons, built using Swift and A
 
 ## Installation & Usage
 
+### Quick Setup (Recommended)
+
+Run the automated setup script from the repository root:
+```bash
+./setup_xcode.sh
+```
+
+This script will:
+- Verify Xcode installation and version
+- Check project structure and Swift source files
+- Build the project to validate setup
+- Provide next steps for development
+
 ### Option 1: Xcode Project
 
 1. Open `InteractiveTracker.xcodeproj` in Xcode
