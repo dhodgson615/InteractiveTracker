@@ -83,12 +83,12 @@ The application uses object-oriented design patterns:
 ## File Structure
 
 ```
-Interactive Tracker.app/          # macOS application bundle
-├── Contents/
-│   ├── Info.plist               # App metadata
-│   ├── MacOS/
-│   │   └── Interactive Tracker  # Launch script
-│   └── Resources/
-│       ├── src/                 # Application source code
-│       └── students.csv         # Student data
+Interactive Tracker.app/         # macOS application bundle
+└── Contents/
+    ├── Info.plist               # App metadata
+    ├── MacOS/
+    │   └── Interactive Tracker  # Launch script
+    └── Resources/
+        ├── src/                 # Application source code
+        └── students.csv         # Student data
 ```
