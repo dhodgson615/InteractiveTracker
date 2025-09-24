@@ -1,3 +1,5 @@
+"""Footer component for the application."""
+
 import streamlit
 
 
