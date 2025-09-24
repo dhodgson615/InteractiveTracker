@@ -2,12 +2,12 @@
 """Interactive Tracker - Student Lesson Sign-In Application (Native GUI)
 
 A native macOS application for tracking student lessons using a modern GUI interface.
-This application uses object-oriented patterns for better separation of 
+This application uses object-oriented patterns for better separation of
 responsibility and clarity.
 """
 
-import sys
 import os
+import sys
 
 # Add the current directory to sys.path to allow importing from src
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
