@@ -1,0 +1,299 @@
+{
+  "builtTestProducts" : [
+
+  ],
+  "copyCommands" : {
+
+  },
+  "explicitTargetDependencyImportCheckingMode" : {
+    "none" : {
+
+    }
+  },
+  "generatedSourceTargetSet" : [
+
+  ],
+  "pluginDescriptions" : [
+
+  ],
+  "swiftCommands" : {
+    "C.InteractiveTracker-x86_64-unknown-linux-gnu-debug.module" : {
+      "executable" : "/usr/share/swift/usr/bin/swiftc",
+      "fileList" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/sources",
+      "importPath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "inputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController+Pages.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/Student.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/StudentRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/main.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/sources"
+        }
+      ],
+      "isLibrary" : false,
+      "moduleName" : "InteractiveTracker",
+      "moduleOutputPath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/Modules/InteractiveTracker.swiftmodule",
+      "objects" : [
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/AppDelegate.swift.o",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController+Pages.swift.o",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController.swift.o",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/Student.swift.o",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/StudentRepository.swift.o",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/main.swift.o"
+      ],
+      "otherArguments" : [
+        "-target",
+        "x86_64-unknown-linux-gnu",
+        "-enable-batch-mode",
+        "-index-store-path",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/index/store",
+        "-Onone",
+        "-enable-testing",
+        "-j4",
+        "-DSWIFT_PACKAGE",
+        "-DDEBUG",
+        "-module-cache-path",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+        "-parseable-output",
+        "-Xfrontend",
+        "-entry-point-function-name",
+        "-Xfrontend",
+        "InteractiveTracker_main",
+        "-color-diagnostics",
+        "-swift-version",
+        "5",
+        "-g",
+        "-Xcc",
+        "-fPIC",
+        "-Xcc",
+        "-g",
+        "-package-name",
+        "interactivetrackerswift",
+        "-Xcc",
+        "-fno-omit-frame-pointer"
+      ],
+      "outputFileMapPath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/output-file-map.json",
+      "outputs" : [
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController+Pages.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/Student.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/StudentRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/main.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/Modules/InteractiveTracker.swiftmodule"
+        }
+      ],
+      "prepareForIndexing" : false,
+      "sources" : [
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/AppDelegate.swift",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController+Pages.swift",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController.swift",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/Student.swift",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/StudentRepository.swift",
+        "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/main.swift"
+      ],
+      "tempsPath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build",
+      "wholeModuleOptimization" : false
+    }
+  },
+  "swiftFrontendCommands" : {
+
+  },
+  "swiftTargetScanArgs" : {
+    "InteractiveTracker" : [
+      "/usr/share/swift/usr/bin/swiftc",
+      "-module-name",
+      "InteractiveTracker",
+      "-package-name",
+      "interactivetrackerswift",
+      "-incremental",
+      "-c",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/AppDelegate.swift",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController+Pages.swift",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController.swift",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/Student.swift",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/StudentRepository.swift",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/main.swift",
+      "-I",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/Modules",
+      "-target",
+      "x86_64-unknown-linux-gnu",
+      "-enable-batch-mode",
+      "-index-store-path",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/index/store",
+      "-Onone",
+      "-enable-testing",
+      "-j4",
+      "-DSWIFT_PACKAGE",
+      "-DDEBUG",
+      "-module-cache-path",
+      "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/ModuleCache",
+      "-parseable-output",
+      "-Xfrontend",
+      "-entry-point-function-name",
+      "-Xfrontend",
+      "InteractiveTracker_main",
+      "-color-diagnostics",
+      "-swift-version",
+      "5",
+      "-g",
+      "-Xcc",
+      "-fPIC",
+      "-Xcc",
+      "-g",
+      "-package-name",
+      "interactivetrackerswift",
+      "-Xcc",
+      "-fno-omit-frame-pointer",
+      "-driver-use-frontend-path",
+      "/usr/share/swift/usr/bin/swiftc"
+    ]
+  },
+  "targetDependencyMap" : {
+    "InteractiveTracker" : [
+
+    ]
+  },
+  "testDiscoveryCommands" : {
+
+  },
+  "testEntryPointCommands" : {
+
+  },
+  "traitConfiguration" : {
+    "enableAllTraits" : false
+  },
+  "writeCommands" : {
+    "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/sources" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<sources-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/AppDelegate.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController+Pages.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/MainViewController.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/Student.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/StudentRepository.swift"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/Sources/InteractiveTracker/main.swift"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/sources"
+    },
+    "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.product/Objects.LinkFileList" : {
+      "alwaysOutOfDate" : false,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<link-file-list>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/AppDelegate.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/InteractiveTracker.swiftmodule.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController+Pages.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/MainViewController.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/Student.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/StudentRepository.swift.o"
+        },
+        {
+          "kind" : "file",
+          "name" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.build/main.swift.o"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/InteractiveTracker.product/Objects.LinkFileList"
+    },
+    "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt" : {
+      "alwaysOutOfDate" : true,
+      "inputs" : [
+        {
+          "kind" : "virtual",
+          "name" : "<swift-get-version>"
+        },
+        {
+          "kind" : "file",
+          "name" : "/usr/share/swift/usr/bin/swiftc"
+        }
+      ],
+      "outputFilePath" : "/home/runner/work/InteractiveTracker/InteractiveTracker/InteractiveTrackerSwift/.build/x86_64-unknown-linux-gnu/debug/swift-version--1BFCD5C06E9F820A.txt"
+    }
+  }
+}
