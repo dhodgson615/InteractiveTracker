@@ -1,8 +1,37 @@
 #!/bin/bash
 # Setup script for Interactive Tracker Xcode Development Environment
 # This script sets up everything needed to develop the Swift macOS application
+#
+# What this script does:
+# - Verifies macOS and Xcode installation
+# - Checks project structure and Swift source files
+# - Builds the project to validate everything works
+# - Creates the app bundle for testing
+# - Provides clear next steps for development
 
 set -e
+
+# Show help if requested
+if [[ "$1" == "-h" || "$1" == "--help" ]]; then
+    echo "Interactive Tracker Xcode Environment Setup"
+    echo ""
+    echo "Usage: $0"
+    echo ""
+    echo "This script sets up the Xcode development environment for the Interactive Tracker Swift macOS application."
+    echo ""
+    echo "Requirements:"
+    echo "  - macOS"
+    echo "  - Xcode (available from Mac App Store or Apple Developer)"
+    echo ""
+    echo "What this script does:"
+    echo "  - Verifies macOS and Xcode installation"
+    echo "  - Checks project structure and Swift source files"
+    echo "  - Builds the project to validate everything works"
+    echo "  - Creates the app bundle for testing"
+    echo "  - Provides clear next steps for development"
+    echo ""
+    exit 0
+fi
 
 # Colors for output
 RED='\033[0;31m'
@@ -44,7 +73,14 @@ if [[ "$OSTYPE" != "darwin"* ]]; then
     exit 1
 fi
 
-print_status "Running on macOS"
+# Get macOS version for compatibility check
+MACOS_VERSION=$(sw_vers -productVersion)
+print_info "macOS version: $MACOS_VERSION"
+
+# Check minimum macOS version (10.13)
+if [[ $(echo "$MACOS_VERSION 10.13" | tr ' ' '\n' | sort -V | head -n1) != "10.13" ]]; then
+    print_warning "macOS 10.13 or later is recommended for the best experience"
+fi
 
 # Check for Xcode installation
 if ! command -v xcodebuild &> /dev/null; then
@@ -85,8 +121,14 @@ if [[ ! -d "$XCODE_PROJECT_DIR" ]]; then
     exit 1
 fi
 
-if [[ ! -f "$XCODE_PROJECT" ]]; then
-    print_error "Xcode project file not found: $XCODE_PROJECT"
+if [[ ! -d "$XCODE_PROJECT" ]]; then
+    print_error "Xcode project not found: $XCODE_PROJECT"
+    exit 1
+fi
+
+# Also verify the project.pbxproj file exists
+if [[ ! -f "$XCODE_PROJECT/project.pbxproj" ]]; then
+    print_error "Xcode project.pbxproj file not found: $XCODE_PROJECT/project.pbxproj"
     exit 1
 fi
 
@@ -203,3 +245,9 @@ if [[ $REPLY =~ ^[Yy]$ ]]; then
 fi
 
 print_status "Xcode environment setup complete!"
+echo ""
+print_info "Troubleshooting:"
+echo "  - If you get signing errors, configure your Apple Developer account in Xcode"
+echo "  - If builds fail, try cleaning the project: Product → Clean Build Folder (⇧⌘K)"
+echo "  - For distribution builds, see: InteractiveTrackerXcode/README.md"
+echo "  - If the app won't run, check your macOS version (requires 10.13+)"

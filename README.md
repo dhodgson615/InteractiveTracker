@@ -14,6 +14,16 @@ A **native Swift macOS application** for tracking student lessons and managing l
 
 ## Installation & Usage
 
+### Quick Setup for macOS Development
+
+Run the automated setup script to configure your Xcode development environment:
+
+```bash
+git clone https://github.com/dhodgson615/InteractiveTracker.git
+cd InteractiveTracker
+./setup_xcode.sh
+```
+
 ### Xcode Project (Recommended for Development)
 
 #### Quick Setup
