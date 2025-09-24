@@ -68,3 +68,8 @@ Thumbs.db
 
 # CSV files (for local testing)
 students.csv
+
+# Swift build artifacts
+InteractiveTrackerSwift/.build/
+InteractiveTrackerXcode/build/
+InteractiveTrackerXcode/DerivedData/
